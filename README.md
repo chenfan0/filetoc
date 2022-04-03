@@ -3,16 +3,16 @@ Generates table of contents for markdown files inside local git repository. Link
 
 **Table of Contents generated with FileToc**
 <!--filetoc-start-->
-- [lib](https://github.com/chenfan0/dirtoc/tree/main/lib)
-  - [config.js](https://github.com/chenfan0/dirtoc/tree/main/lib/config.js)
-  - [constant.js](https://github.com/chenfan0/dirtoc/tree/main/lib/constant.js)
-  - [createToc.js](https://github.com/chenfan0/dirtoc/tree/main/lib/createToc.js)
-  - [index.js](https://github.com/chenfan0/dirtoc/tree/main/lib/index.js)
-  - [utilis.js](https://github.com/chenfan0/dirtoc/tree/main/lib/utilis.js)
-- [filetoc.config.js](https://github.com/chenfan0/dirtoc/blob/main/filetoc.config.js)
-- [index.js](https://github.com/chenfan0/dirtoc/blob/main/index.js)
-- [package.json](https://github.com/chenfan0/dirtoc/blob/main/package.json)
-- [README.md](https://github.com/chenfan0/dirtoc/blob/main/README.md)
+- [lib](https://github.com/chenfan0/filetoc/tree/main/lib)
+  - [config.js](https://github.com/chenfan0/filetoc/tree/main/lib/config.js)
+  - [constant.js](https://github.com/chenfan0/filetoc/tree/main/lib/constant.js)
+  - [createToc.js](https://github.com/chenfan0/filetoc/tree/main/lib/createToc.js)
+  - [index.js](https://github.com/chenfan0/filetoc/tree/main/lib/index.js)
+  - [utilis.js](https://github.com/chenfan0/filetoc/tree/main/lib/utilis.js)
+- [filetoc.config.js](https://github.com/chenfan0/filetoc/blob/main/filetoc.config.js)
+- [index.js](https://github.com/chenfan0/filetoc/blob/main/index.js)
+- [package.json](https://github.com/chenfan0/filetoc/blob/main/package.json)
+- [README.md](https://github.com/chenfan0/filetoc/blob/main/README.md)
 <!--filetoc-end-->
 
 ## Installation
