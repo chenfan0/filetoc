@@ -1,15 +1,24 @@
 {
   "name": "filetoc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/chenfan0/filetoc"
+  },
   "bin": {
     "filetoc": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "github",
+    "markdown",
+    "documentation",
+    "readme",
+    "toc"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
