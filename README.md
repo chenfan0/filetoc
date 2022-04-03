@@ -2,13 +2,18 @@
 Generates table of contents for markdown files inside local git repository. Link to file address.
 
 **Table of Contents generated with FileToc**
-<!--dirtoc-start-->
-- [config.js](https://github.com/chenfan0/algorithm/tree/main/lib/config.js)
-- [constant.js](https://github.com/chenfan0/algorithm/tree/main/lib/constant.js)
-- [createToc.js](https://github.com/chenfan0/algorithm/tree/main/lib/createToc.js)
-- [index.js](https://github.com/chenfan0/algorithm/tree/main/lib/index.js)
-- [utilis.js](https://github.com/chenfan0/algorithm/tree/main/lib/utilis.js)
-<!--dirtoc-end-->
+<!--filetoc-start-->
+- [lib](https://github.com/chenfan0/dirtoc/tree/main/lib)
+  - [config.js](https://github.com/chenfan0/dirtoc/tree/main/lib/config.js)
+  - [constant.js](https://github.com/chenfan0/dirtoc/tree/main/lib/constant.js)
+  - [createToc.js](https://github.com/chenfan0/dirtoc/tree/main/lib/createToc.js)
+  - [index.js](https://github.com/chenfan0/dirtoc/tree/main/lib/index.js)
+  - [utilis.js](https://github.com/chenfan0/dirtoc/tree/main/lib/utilis.js)
+- [filetoc.config.js](https://github.com/chenfan0/dirtoc/blob/main/filetoc.config.js)
+- [index.js](https://github.com/chenfan0/dirtoc/blob/main/index.js)
+- [package.json](https://github.com/chenfan0/dirtoc/blob/main/package.json)
+- [README.md](https://github.com/chenfan0/dirtoc/blob/main/README.md)
+<!--filetoc-end-->
 
 ## Installation
 ```shell
@@ -33,7 +38,6 @@ module.exports = {
 #### Example
 ```
 <!--filetoc-start-->
-// the toc will insert here
 <!--filetoc-end-->
 ```
 ### Run filetoc
