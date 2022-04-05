@@ -4,9 +4,6 @@
 **用FileToc生成的目录**
 <!--filetoc-start-->
 - [.husky](https://github.com/chenfan0/filetoc/tree/main/.husky)
-  - [_](https://github.com/chenfan0/filetoc/tree/main/.husky/_)
-    - [.gitignore](https://github.com/chenfan0/filetoc/tree/main/.husky/_/.gitignore)
-    - [husky.sh](https://github.com/chenfan0/filetoc/tree/main/.husky/_/husky.sh)
   - [pre-commit](https://github.com/chenfan0/filetoc/tree/main/.husky/pre-commit)
 - [lib](https://github.com/chenfan0/filetoc/tree/main/lib)
   - [config.js](https://github.com/chenfan0/filetoc/tree/main/lib/config.js)
@@ -37,7 +34,7 @@ module.exports = {
   remoteUrl: 'https://github.com/chenfan0/dirtoc',   // 你的仓库远程地址
   mainBranch: 'main',  // 你的默认分支，默认为'main'
   dirPath: '.',  //  你想要生成toc的目录地址. 默认 '.'
-  mdPath: './README.md',  // markdown文件路径.  默认 'README.md'
+  mdPath: ['./README.md', './README.zh.md'],  // markdown文件路径, 当只有一个路径时，也可写成字符串形式.  默认 ['README.md']
   excludes: ['.git']  // 不需要生成toc的文件名或者目录名
 }
 ```

@@ -8,9 +8,6 @@ Generates table of contents for markdown files inside local git repository. Link
 **Table of Contents generated with FileToc**
 <!--filetoc-start-->
 - [.husky](https://github.com/chenfan0/filetoc/tree/main/.husky)
-  - [_](https://github.com/chenfan0/filetoc/tree/main/.husky/_)
-    - [.gitignore](https://github.com/chenfan0/filetoc/tree/main/.husky/_/.gitignore)
-    - [husky.sh](https://github.com/chenfan0/filetoc/tree/main/.husky/_/husky.sh)
   - [pre-commit](https://github.com/chenfan0/filetoc/tree/main/.husky/pre-commit)
 - [lib](https://github.com/chenfan0/filetoc/tree/main/lib)
   - [config.js](https://github.com/chenfan0/filetoc/tree/main/lib/config.js)
@@ -41,7 +38,7 @@ module.exports = {
   remoteUrl: 'https://github.com/chenfan0/dirtoc',   // your repo address
   mainBranch: 'main',  // your default branch. default 'main'
   dirPath: '.',  //  the dir where you want to gengerate the toc. default '.'
-  mdPath: './README.md',  // the markdown  file path.  default 'README.md'
+  mdPath: ['./README.md', './README.zh.md'],  // the markdown files path, when there is only one path, it also can be a string.  default ['README.md']
   excludes: ['.git']  // the excludes file name or dir name
 }
 ```
