@@ -49,9 +49,9 @@ module.exports = {
 **You should specify where to insert the TOC in your markdown file.**
 #### Example
 ```
-<!--filetoc-start-->
+<!--filetoc-start1-->
 the toc will insert here
-<!--filetoc-end-->
+<!--filetoc-end1-->
 ```
 ### Run filetoc
 Go into the directory that contains you local git project and type:

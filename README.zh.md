@@ -3,15 +3,22 @@
 
 **用FileToc生成的目录**
 <!--filetoc-start-->
+- [.husky](https://github.com/chenfan0/filetoc/tree/main/.husky)
+  - [_](https://github.com/chenfan0/filetoc/tree/main/.husky/_)
+    - [.gitignore](https://github.com/chenfan0/filetoc/tree/main/.husky/_/.gitignore)
+    - [husky.sh](https://github.com/chenfan0/filetoc/tree/main/.husky/_/husky.sh)
+  - [pre-commit](https://github.com/chenfan0/filetoc/tree/main/.husky/pre-commit)
 - [lib](https://github.com/chenfan0/filetoc/tree/main/lib)
   - [config.js](https://github.com/chenfan0/filetoc/tree/main/lib/config.js)
   - [constant.js](https://github.com/chenfan0/filetoc/tree/main/lib/constant.js)
   - [createToc.js](https://github.com/chenfan0/filetoc/tree/main/lib/createToc.js)
   - [index.js](https://github.com/chenfan0/filetoc/tree/main/lib/index.js)
   - [utilis.js](https://github.com/chenfan0/filetoc/tree/main/lib/utilis.js)
+- [.gitignore](https://github.com/chenfan0/filetoc/blob/main/.gitignore)
 - [filetoc.config.js](https://github.com/chenfan0/filetoc/blob/main/filetoc.config.js)
 - [index.js](https://github.com/chenfan0/filetoc/blob/main/index.js)
 - [package.json](https://github.com/chenfan0/filetoc/blob/main/package.json)
+- [pnpm-lock.yaml](https://github.com/chenfan0/filetoc/blob/main/pnpm-lock.yaml)
 - [README.md](https://github.com/chenfan0/filetoc/blob/main/README.md)
 - [README.zh.md](https://github.com/chenfan0/filetoc/blob/main/README.zh.md)
 <!--filetoc-end-->
@@ -38,9 +45,9 @@ module.exports = {
 **你应该在markdown文件中指定插入toc的位置**
 #### Example
 ```
-<!--filetoc-start-->
+<!--filetoc-start1-->
 toc目录将会插入在这里
-<!--filetoc-end-->
+<!--filetoc-end1-->
 ```
 ### 执行 filetoc
 进入到你本地仓库的目录，并且执行filetoc命令:
