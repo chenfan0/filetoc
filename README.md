@@ -55,3 +55,15 @@ Go into the directory that contains you local git project and type:
 ```
 filetoc
 ```
+## Use with git hooks
+If you want to automatically modify the markdown for you before each commit.You can use [husky](https://github.com/typicode/husky) to achieve this effect.
+
+Go into the directory that contains you local git project and type:
+```shell
+npx husky-init && npm install
+```
+Find the **pre-commit** file under the generated husky folder and write in the file:
+```
+filetoc
+git add .
+```
