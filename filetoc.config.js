@@ -3,5 +3,5 @@ module.exports = {
   mainBranch: 'main',  // 主分支
   dirPath: '.',  // 要生成toc的目录路径
   mdPath: './README.md',  // 生成的toc添加到的md文件路径
-  excludes: ['.git', 'node_modules', '.husky']
+  excludes: ['.git', 'node_modules']
 }

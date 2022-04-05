@@ -7,6 +7,11 @@ Generates table of contents for markdown files inside local git repository. Link
 
 **Table of Contents generated with FileToc**
 <!--filetoc-start-->
+- [.husky](https://github.com/chenfan0/filetoc/tree/main/.husky)
+  - [_](https://github.com/chenfan0/filetoc/tree/main/.husky/_)
+    - [.gitignore](https://github.com/chenfan0/filetoc/tree/main/.husky/_/.gitignore)
+    - [husky.sh](https://github.com/chenfan0/filetoc/tree/main/.husky/_/husky.sh)
+  - [pre-commit](https://github.com/chenfan0/filetoc/tree/main/.husky/pre-commit)
 - [lib](https://github.com/chenfan0/filetoc/tree/main/lib)
   - [config.js](https://github.com/chenfan0/filetoc/tree/main/lib/config.js)
   - [constant.js](https://github.com/chenfan0/filetoc/tree/main/lib/constant.js)
@@ -45,6 +50,11 @@ module.exports = {
 #### Example
 ```
 <!--filetoc-start-->
+- [.husky](https://github.com/chenfan0/filetoc/tree/main/.husky)
+  - [_](https://github.com/chenfan0/filetoc/tree/main/.husky/_)
+    - [.gitignore](https://github.com/chenfan0/filetoc/tree/main/.husky/_/.gitignore)
+    - [husky.sh](https://github.com/chenfan0/filetoc/tree/main/.husky/_/husky.sh)
+  - [pre-commit](https://github.com/chenfan0/filetoc/tree/main/.husky/pre-commit)
 - [lib](https://github.com/chenfan0/filetoc/tree/main/lib)
   - [config.js](https://github.com/chenfan0/filetoc/tree/main/lib/config.js)
   - [constant.js](https://github.com/chenfan0/filetoc/tree/main/lib/constant.js)
