@@ -35,16 +35,16 @@ module.exports = {
   mainBranch: 'main',  // 你的默认分支，默认为'main'
   dirPath: '.',  //  你想要生成toc的目录地址. 默认 '.'
   mdPath: ['./README.md', './README.zh.md'],  // markdown文件路径, 当只有一个路径时，也可写成字符串形式.  默认 ['README.md']
-  excludes: ['.git']  // 不需要生成toc的文件名或者目录名
+  excludes: ['.git', 'node_module', '_']  // 不需要生成toc的文件名或者目录名
 }
 ```
 ### 指定toc生成的位置
 **你应该在markdown文件中指定插入toc的位置**
 #### Example
 ```
-<!--filetoc-start1-->
+<!--filetoc-start-->
 toc目录将会插入在这里
-<!--filetoc-end1-->
+<!--filetoc-end-->
 ```
 ### 执行 filetoc
 进入到你本地仓库的目录，并且执行filetoc命令:
