@@ -51,3 +51,15 @@ toc目录将会插入在这里
 ```
 filetoc
 ```
+## 配合git hooks使用
+如果你想要在每次commit之前，自动帮你修改md文档。你可以借助[husky](https://github.com/typicode/husky)来实现这个效果。
+
+在终端执行如下命令
+```shell
+npx husky-init && npm install
+```
+在生成的husky文件夹下找到**pre-commit**文件，并在该文件中写入：
+```
+filetoc
+git add .
+```
