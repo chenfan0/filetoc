@@ -50,24 +50,7 @@ module.exports = {
 #### Example
 ```
 <!--filetoc-start-->
-- [.husky](https://github.com/chenfan0/filetoc/tree/main/.husky)
-  - [_](https://github.com/chenfan0/filetoc/tree/main/.husky/_)
-    - [.gitignore](https://github.com/chenfan0/filetoc/tree/main/.husky/_/.gitignore)
-    - [husky.sh](https://github.com/chenfan0/filetoc/tree/main/.husky/_/husky.sh)
-  - [pre-commit](https://github.com/chenfan0/filetoc/tree/main/.husky/pre-commit)
-- [lib](https://github.com/chenfan0/filetoc/tree/main/lib)
-  - [config.js](https://github.com/chenfan0/filetoc/tree/main/lib/config.js)
-  - [constant.js](https://github.com/chenfan0/filetoc/tree/main/lib/constant.js)
-  - [createToc.js](https://github.com/chenfan0/filetoc/tree/main/lib/createToc.js)
-  - [index.js](https://github.com/chenfan0/filetoc/tree/main/lib/index.js)
-  - [utilis.js](https://github.com/chenfan0/filetoc/tree/main/lib/utilis.js)
-- [.gitignore](https://github.com/chenfan0/filetoc/blob/main/.gitignore)
-- [filetoc.config.js](https://github.com/chenfan0/filetoc/blob/main/filetoc.config.js)
-- [index.js](https://github.com/chenfan0/filetoc/blob/main/index.js)
-- [package.json](https://github.com/chenfan0/filetoc/blob/main/package.json)
-- [pnpm-lock.yaml](https://github.com/chenfan0/filetoc/blob/main/pnpm-lock.yaml)
-- [README.md](https://github.com/chenfan0/filetoc/blob/main/README.md)
-- [README.zh.md](https://github.com/chenfan0/filetoc/blob/main/README.zh.md)
+the toc will insert here
 <!--filetoc-end-->
 ```
 ### Run filetoc
