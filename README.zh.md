@@ -35,7 +35,7 @@ module.exports = {
   mainBranch: 'main',  // 你的默认分支，默认为'main'
   dirPath: '.',  //  你想要生成toc的目录地址. 默认 '.'
   mdPath: ['./README.md', './README.zh.md'],  // markdown文件路径, 当只有一个路径时，也可写成字符串形式.  默认 ['README.md']
-  excludes: ['.git', 'node_module', '_']  // 不需要生成toc的文件名或者目录名
+  excludes: ['.git', 'node_module', '_', '.png']  // 不需要生成toc的文件名或者目录名或者后缀名
 }
 ```
 ### 指定toc生成的位置
