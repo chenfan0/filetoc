@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const { generatorToc, callWithErrorHanding } = require('./lib')
+import { generatorToc, callWithErrorHanding } from './dist/bundle.js'
 
 callWithErrorHanding(generatorToc)
