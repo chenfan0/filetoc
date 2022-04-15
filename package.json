@@ -1,6 +1,6 @@
 {
   "name": "filetoc",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -23,6 +23,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "husky": "^7.0.0"
+    "husky": "^7.0.4"
   }
 }
