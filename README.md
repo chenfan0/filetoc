@@ -49,7 +49,7 @@ npm install filetoc -g
 
 ```js
 // filetoc.config.js
-export default {
+module.exports = {
   remoteUrl: 'https://github.com/chenfan0/dirtoc', // your repo address
   mainBranch: 'main', // your default branch. default 'main'
   dirPath: '.', //  the dir where you want to gengerate the toc. default '.'
