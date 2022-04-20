@@ -12,6 +12,8 @@ Generates table of contents for markdown files inside local git repository. Link
 <!--filetoc-start-->
 - [.husky](https://github.com/chenfan0/filetoc/tree/main/.husky)
   - [pre-commit](https://github.com/chenfan0/filetoc/tree/main/.husky/pre-commit)
+- [.vscode](https://github.com/chenfan0/filetoc/tree/main/.vscode)
+  - [settings.json](https://github.com/chenfan0/filetoc/tree/main/.vscode/settings.json)
 - [dist](https://github.com/chenfan0/filetoc/tree/main/dist)
   - [bundle.js](https://github.com/chenfan0/filetoc/tree/main/dist/bundle.js)
 - [lib](https://github.com/chenfan0/filetoc/tree/main/lib)
@@ -66,7 +68,7 @@ export default {
 
 ```
 <!--filetoc-start-->
-the toc will insert here
+toc will insert here
 <!--filetoc-end-->
 ```
 

@@ -97,8 +97,8 @@ function handleDirent(dirsInfo, parentPath, excludes) {
         if (isDir(dir)) {
             if (!excludes.includes(name)) {
                 dirResult.push(dir);
-                dir.children = readdirSync(resolve(parentPath, name), readDirSyncOptions);
-                dir.children = handleDirent(dir.children, resolve(parentPath, name), excludes);
+                const children = readdirSync(resolve(parentPath, name), readDirSyncOptions);
+                dir.children = handleDirent(children, resolve(parentPath, name), excludes);
             }
         }
         else {
@@ -115,6 +115,12 @@ function handleDirent(dirsInfo, parentPath, excludes) {
             }
         }
     }
+    // 处理文件排序
+    fileResult.sort((a, b) => {
+        const numA = Number(a.name.split('.')[0]);
+        const numB = Number(b.name.split('.')[0]);
+        return numA - numB;
+    });
     return [...dirResult, ...fileResult];
 }
 /**

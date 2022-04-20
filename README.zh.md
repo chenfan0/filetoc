@@ -7,6 +7,8 @@
 <!--filetoc-start-->
 - [.husky](https://github.com/chenfan0/filetoc/tree/main/.husky)
   - [pre-commit](https://github.com/chenfan0/filetoc/tree/main/.husky/pre-commit)
+- [.vscode](https://github.com/chenfan0/filetoc/tree/main/.vscode)
+  - [settings.json](https://github.com/chenfan0/filetoc/tree/main/.vscode/settings.json)
 - [dist](https://github.com/chenfan0/filetoc/tree/main/dist)
   - [bundle.js](https://github.com/chenfan0/filetoc/tree/main/dist/bundle.js)
 - [lib](https://github.com/chenfan0/filetoc/tree/main/lib)
@@ -61,7 +63,7 @@ export default {
 
 ```
 <!--filetoc-start-->
-toc目录会插入在这里
+toc会插入到这里
 <!--filetoc-end-->
 ```
 

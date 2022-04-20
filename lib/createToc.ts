@@ -1,3 +1,5 @@
+import { Dirent } from 'fs'
+
 import {
   readdirSync,
   resolve,
@@ -17,6 +19,10 @@ import {
 } from './config'
 import { TREE, BLOB } from './constant'
 
+interface IDirent extends Dirent {
+  children?: IDirent[]
+}
+
 /**
  *
  * @param {[]} dirsInfo 读取的文件信息
@@ -25,9 +31,13 @@ import { TREE, BLOB } from './constant'
  * @returns []
  */
 // 对readdirSync读取的数据进行处理
-function handleDirent(dirsInfo: any[], parentPath: string, excludes: string[]) {
-  const dirResult: string[] = []
-  const fileResult: string[] = []
+function handleDirent(
+  dirsInfo: IDirent[],
+  parentPath: string,
+  excludes: string[]
+) {
+  const dirResult: Dirent[] = []
+  const fileResult: Dirent[] = []
   for (let i = 0; i < dirsInfo.length; i++) {
     const dir = dirsInfo[i]
     const name = dir.name
@@ -36,12 +46,13 @@ function handleDirent(dirsInfo: any[], parentPath: string, excludes: string[]) {
     if (isDir(dir)) {
       if (!excludes.includes(name)) {
         dirResult.push(dir)
-        dir.children = readdirSync(
+        const children = readdirSync(
           resolve(parentPath, name),
           readDirSyncOptions
         )
+
         dir.children = handleDirent(
-          dir.children,
+          children as any as IDirent[],
           resolve(parentPath, name),
           excludes
         )
@@ -60,6 +71,14 @@ function handleDirent(dirsInfo: any[], parentPath: string, excludes: string[]) {
       }
     }
   }
+
+  // 处理文件排序
+  fileResult.sort((a, b) => {
+    const numA = Number(a.name.split('.')[0])
+    const numB = Number(b.name.split('.')[0])
+    return numA - numB
+  })
+
   return [...dirResult, ...fileResult]
 }
 
@@ -72,7 +91,12 @@ function handleDirent(dirsInfo: any[], parentPath: string, excludes: string[]) {
  * @returns string
  */
 // 根据目录生成对应的md文件内容
-function handleTocContent(dirsInfo: string[], indent: string, baseUrl: string, tocContent: string) {
+function handleTocContent(
+  dirsInfo: any[],
+  indent: string,
+  baseUrl: string,
+  tocContent: string
+) {
   function getTocContent(indent: string, name: string, url: string) {
     return `${indent}- [${name}](${url})\n`
   }
@@ -109,9 +133,9 @@ function handleTocContent(dirsInfo: string[], indent: string, baseUrl: string, t
   return tocContent
 }
 
-
 const dirent = readdirSync(resolve(cwd, dirPath), readDirSyncOptions)
-const dirsInfo = handleDirent(dirent, resolve(cwd, dirPath), excludes)
+const dirsInfo = handleDirent(dirent as any as IDirent[], resolve(cwd, dirPath), excludes)
+
 const tocContent = handleTocContent(dirsInfo, '', baseUrl, '\n')
 
 export function generatorToc() {
