@@ -10,8 +10,6 @@ Generates table of contents for markdown files inside local git repository. Link
 **Table of Contents generated with FileToc**
 
 <!--filetoc-start-->
-- [.husky](https://github.com/chenfan0/filetoc/tree/main/.husky)
-  - [pre-commit](https://github.com/chenfan0/filetoc/tree/main/.husky/pre-commit)
 - [.vscode](https://github.com/chenfan0/filetoc/tree/main/.vscode)
   - [settings.json](https://github.com/chenfan0/filetoc/tree/main/.vscode/settings.json)
 - [dist](https://github.com/chenfan0/filetoc/tree/main/dist)

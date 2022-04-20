@@ -5,8 +5,6 @@
 **用 FileToc 生成的目录**
 
 <!--filetoc-start-->
-- [.husky](https://github.com/chenfan0/filetoc/tree/main/.husky)
-  - [pre-commit](https://github.com/chenfan0/filetoc/tree/main/.husky/pre-commit)
 - [.vscode](https://github.com/chenfan0/filetoc/tree/main/.vscode)
   - [settings.json](https://github.com/chenfan0/filetoc/tree/main/.vscode/settings.json)
 - [dist](https://github.com/chenfan0/filetoc/tree/main/dist)
@@ -63,7 +61,6 @@ export default {
 
 ```
 <!--filetoc-start-->
-toc会插入到这里
 <!--filetoc-end-->
 ```
 

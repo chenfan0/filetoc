@@ -1,16 +1,8 @@
-import path from 'path'
 
 import { join, handleBaseUrl } from './utilis.js'
 import { CONFIG_NAME } from './constant.js'
 
 export const cwd = process.cwd()
-
-export async function getConfig(cwd: string, configName: string) {
-  const relativeConfigPath = path
-    .relative('./config.js', join(cwd, configName))
-    .replace(/\\/g, '/')
-  return import(relativeConfigPath)
-}
 
 interface TConfig {
   dirPath?: string
@@ -22,9 +14,10 @@ interface TConfig {
 
 let config: TConfig
 try {
-  const result = await getConfig(cwd, CONFIG_NAME)
-  config = result.default
+  config = require(join(cwd, CONFIG_NAME))
 } catch (err) {
+  console.log(err)
+
   config = {}
 }
 

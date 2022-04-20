@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   remoteUrl: 'https://github.com/chenfan0/filetoc', // 仓库地址
   mainBranch: 'main', // 主分支
   dirPath: '.', // 要生成toc的目录路径

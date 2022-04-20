@@ -4,7 +4,7 @@ export default {
   input: './lib/index.ts',
   output: {
     file: 'dist/bundle.js',
-    format: 'es'
+    format: 'cjs'
   },
   plugins: [typescript()]
 }

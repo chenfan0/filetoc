@@ -1,20 +1,29 @@
-import fs from 'fs';
-import path from 'path';
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var fs = require('fs');
+var path = require('path');
+
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+var fs__default = /*#__PURE__*/_interopDefaultLegacy(fs);
+var path__default = /*#__PURE__*/_interopDefaultLegacy(path);
 
 function resolve(...args) {
-    return path.resolve(...args);
+    return path__default["default"].resolve(...args);
 }
 function join(...args) {
-    return path.join(...args);
+    return path__default["default"].join(...args);
 }
 function readdirSync(...args) {
-    return fs.readdirSync(...args);
+    return fs__default["default"].readdirSync(...args);
 }
 function writeFileSync(...args) {
-    return fs.writeFileSync(...args);
+    return fs__default["default"].writeFileSync(...args);
 }
 function readFileSync(filePath, options = 'utf-8') {
-    return fs.readFileSync(filePath, options);
+    return fs__default["default"].readFileSync(filePath, options);
 }
 function isDir(dirent) {
     return dirent[Object.getOwnPropertySymbols(dirent)[0]] === 2;
@@ -48,18 +57,12 @@ const BLOB = '/blob/';
 const CONFIG_NAME = 'filetoc.config.js';
 
 const cwd = process.cwd();
-async function getConfig(cwd, configName) {
-    const relativeConfigPath = path
-        .relative('./config.js', join(cwd, configName))
-        .replace(/\\/g, '/');
-    return import(relativeConfigPath);
-}
 let config;
 try {
-    const result = await getConfig(cwd, CONFIG_NAME);
-    config = result.default;
+    config = require(join(cwd, CONFIG_NAME));
 }
 catch (err) {
+    console.log(err);
     config = {};
 }
 // 要生成toc的文件夹路径
@@ -186,4 +189,5 @@ function generatorToc() {
     console.log('\n--------------------------------');
 }
 
-export { callWithErrorHanding, generatorToc };
+exports.callWithErrorHanding = callWithErrorHanding;
+exports.generatorToc = generatorToc;
