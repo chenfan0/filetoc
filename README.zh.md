@@ -44,7 +44,7 @@ npm install filetoc -g
 
 ```js
 // filetoc.config.js
-export default {
+module.exports = {
   remoteUrl: 'https://github.com/chenfan0/dirtoc', // 你的仓库远程地址
   mainBranch: 'main', // 你的默认分支，默认为'main'
   dirPath: '.', //  你想要生成toc的目录地址. 默认 '.'
